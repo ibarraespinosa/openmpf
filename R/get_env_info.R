@@ -1,20 +1,9 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' get info
+#'
+#' @description \code{\link{get_info}} displays environment info
 #' @useDynLib  openmpf, .registration = TRUE
 #' @export
-get_env_info <- function() {
+get_info <- function() {
   a <-   .Fortran("getinfo")
   return(a)
 
