@@ -8,7 +8,9 @@
 !******************************************************************************
 
 subroutine getinfo
-     
+
+    implicit none
+
 INTEGER NTHREADS, TID, OMP_GET_NUM_THREADS, PROCS, MAXT, OMP_GET_THREAD_NUM, OMP_GET_NUM_PROCS, OMP_GET_MAX_THREADS
 
 LOGICAL INPAR, DYNAMIC, NESTED, OMP_IN_PARALLEL, OMP_GET_DYNAMIC, OMP_GET_NESTED
